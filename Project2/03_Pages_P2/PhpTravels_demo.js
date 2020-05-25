@@ -14,14 +14,17 @@ module.exports = (function (demoPage) {
 	
 	demoPage.loadingDemoPage = function (URL){
 		
+		
+		
 		//open page
 		browser.get(URL);
+           expect(browser.getCurrentUrl()).toBe(URL);
 		
 		// click Product button
-		//demoPage.productMenuButtonClick();
+		demoPage.productMenuButtonClick();
 		
 		// select Documentation option
-		//demoPage.documentationButtonClick();
+		demoPage.documentationButtonClick();
 	
 	
 	
